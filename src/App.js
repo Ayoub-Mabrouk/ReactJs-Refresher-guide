@@ -24,7 +24,7 @@ function App() {
   
   return (
     <div className="App">
-      <ExpenseItem/>
+      {expenses?.map(e=><ExpenseItem key={e.id} data={e}/>)}
     </div>
   );
 }
